@@ -1,0 +1,50 @@
+body{
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    width: fit-content;
+
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: #2b2839;
+    background: #ddebf8;
+    border-bottom: 10px solid #173644;
+
+    box-shadow: 10px 10px 20px gray;
+
+    animation: colorChange 5s;
+    animation-iteration-count: infinite;
+}
+
+.avatar {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+
+    transition: all 0.3s ease;
+}
+
+.avatar:hover{
+    box-shadow: 0 10px 15px rgba(0,0,0,0.2);
+    transform: scale(1.05,1.05);
+}
+
+.border-blue{
+    border: 1px dotted blue;
+}
+
+.wrapper-content{
+    display: block;
+    text-align: center;
+}
+
+@keyframes colorChange{
+    0% {background: #ddebf8;}
+    50% {background: #6488aa;}
+    100% {background: #ddebf8;}
+}
